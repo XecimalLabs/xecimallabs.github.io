@@ -416,7 +416,10 @@
             return `
                 <div onclick="openModal(${app.id})" class="fluent-card rounded-xl p-4 flex flex-col justify-between cursor-pointer group">
                     <div class="space-y-3">
-
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-xl bg-gradient-to-tr ${app.bgGradient} flex items-center justify-center text-xl text-white shadow-md group-hover:scale-105 transition-transform duration-200">
+                                <i class="fa-solid ${app.icon}"></i>
+                            </div>
                             <div class="overflow-hidden">
                                 <h3 class="font-semibold text-slate-100 truncate text-sm group-hover:text-blue-400 transition-colors">${app.title}</h3>
                                 <span class="text-xs text-slate-400 block">${app.category}</span>
